@@ -21,25 +21,19 @@
   nav {
     ul {
       display: block;
-
       list-style-image: none;
-
       list-style-position: outside;
-
       list-style-type: none;
-
       padding-inline-start: 40px;
 
       li {
         display: list-item;
-
         margin-right: 0px;
       }
     }
   }
   nav > ul {
     margin-block-end: 1em;
-
     margin-block-start: 1em;
   }
 
@@ -124,6 +118,7 @@
       }
     }
   }
+
   #actions {
     float: right;
     margin-top: 2rem;
@@ -133,7 +128,21 @@
 
     ul {
       display: block;
+
+      li {
+        margin: 0;
+
+        a {
+          padding: 0 8px;
+          display: inline-block;
+        }
+        a:hover {
+          border-radius: 100%;
+          background: transparentize($color-accent-3, 0.8);
+        }
+      }
     }
+
     .info {
       display: block;
       font-style: italic;
