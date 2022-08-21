@@ -1,3 +1,9 @@
+.mainSectionTitle {
+  a:hover {
+    color: $color-link;
+  }
+}
+
 .post-list {
   padding: 0;
 
@@ -15,6 +21,7 @@
     }
   }
 }
+
 @media (min-width: 480px) {
   .post-list {
     .post-item {
@@ -27,12 +34,14 @@
     }
   }
 }
+
 .project-list {
   padding: 0;
   list-style: none;
 
   .project-item {
     margin-bottom: 5px;
+
     p {
       display: inline;
     }
