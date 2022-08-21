@@ -140,7 +140,7 @@
       display: block;
 
       li {
-        margin: 0;
+        margin: 0 6px;
 
         a {
           padding: 0 8px;
@@ -151,6 +151,10 @@
           border-radius: 100%;
           background: transparentize($color-accent-3, 0.8);
         }
+      }
+
+      li:last-child {
+        margin-right: 0;
       }
     }
 
