@@ -38,7 +38,7 @@
   </section>
 
   <section id="writing">
-    <span class="h1 mainSectionTitle">
+    <span class="h1 sectionTitle">
       <a href="{{ .Site.Params.mainSection | absURL }}">{{ .Site.Params.mainSectionTitle | default (humanize .Site.Params.mainSection) | default "Writings" }}</a>
     </span>
     {{ if (and (and (isset .Site.Params "tagsoverview") (eq .Site.Params.tagsOverview true)) (gt (len .Site.Taxonomies.tags) 0)) }}
@@ -106,7 +106,7 @@
         {{ $projectsUrl = .Site.Params.projectsUrl }}
     {{ end }}
     <section id="projects">
-      <span class="h1"><a href="{{ $projectsUrl }}">Projects</a></span>
+      <span class="h1 sectionTitle"><a href="{{ $projectsUrl }}">Projects</a></span>
       <ul class="project-list">
         {{ range .Site.Data.projects.list }}
           <li class="project-item">
