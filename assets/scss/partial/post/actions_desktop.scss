@@ -171,8 +171,12 @@
     text-align: right;
 
     li {
-      display: block;
-      margin: 0;
+      display: inline-block;
+      margin: 0 8px;
+    }
+
+    li:last-child {
+      margin-right: 0;
     }
   }
 
